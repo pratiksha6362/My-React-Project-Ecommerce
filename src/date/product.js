@@ -1,13 +1,13 @@
-import product1 from "../assets/images/images3.png";
-import product2 from "../assets/images/im1.png";
-import product3 from "../assets/images/im1.png";
-import product4 from "../assets/images/image4.png";
-import product5 from "../assets/images/img5.png";
+import product1 from "../assets/images/headphone.png";
+import product2 from "../assets/images/sneakers.png";
+import product3 from "../assets/images/headphone.png";
+import product4 from "../assets/images/jockets.png";
+import product5 from "../assets/images/ties.png";
 
 export const products = [
   {
     id: 1,
-    name: "Velocity Sneakers",
+    name: "Kod Sneakers",
     category: "Footwear",
     price: 2499,
     description: "Sleek running sneakers designed for all-day comfort.",
@@ -31,7 +31,7 @@ export const products = [
   },
   {
     id: 4,
-    name: "Frostbite Jacket",
+    name: " fabricant jockets",
     category: "Clothing",
     price: 1299,
     description: "Windproof, insulated winter jacket for extreme cold.",
@@ -39,8 +39,8 @@ export const products = [
   },
   {
     id: 5,
-    name: "Shadow Cap",
-    category: "Accessories",
+    name: " ties ",
+    category: "Clothing",
     price: 499,
     description: "Stylish black cap with adjustable fit and breathable fabric.",
     image: product5,

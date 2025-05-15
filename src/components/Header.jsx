@@ -9,42 +9,45 @@ export default function Header() {
         justifyContent: "space-between",
         alignItems: "center",
         padding: "15px 30px",
-        backgroundColor: "#2c003e", // deep violet
-        color: "#ffffff",
-        boxShadow: "0 2px 10px rgba(0,0,0,0.1)",
-        fontFamily: "Arial, sans-serif"
+        backgroundColor: "#8A3DFF", // light violet
+        color: "#FFFFFF",
+        boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
+        fontFamily: "Arial, sans-serif",
+        borderBottom: "2px solid #FF4D00", // Orange-red border for accent
     };
 
     const logoStyle = {
-        fontSize: "24px",
+        fontSize: "28px",
         textDecoration: "none",
-        color: "#ffffff",
+        color: "#FF4D00", // Orange-red for logo
         fontWeight: "bold",
-        letterSpacing: "1px"
+        letterSpacing: "2px",
+        textTransform: "uppercase",
     };
 
     const cartLinkStyle = {
         textDecoration: "none",
-        color: "#ffffff",
+        color: "#FFFFFF",
         fontSize: "18px",
         display: "flex",
         alignItems: "center",
-        gap: "8px"
+        gap: "8px",
+        fontWeight: "600", // Slightly bolder for emphasis
     };
 
     const cartCountStyle = {
-        backgroundColor: "#ff66cc", // pink-violet
-        color: "#2c003e", // contrast
+        backgroundColor: "#FF4D00", // Orange-red background for cart count
+        color: "#FFFFFF", // White text for contrast
         borderRadius: "12px",
-        padding: "2px 8px",
-        marginLeft: "4px",
+        padding: "4px 10px",
+        marginLeft: "6px",
         fontSize: "14px",
-        fontWeight: "bold"
+        fontWeight: "bold",
     };
 
     return (
         <header style={headerStyle}>
-            <Link to="/" style={logoStyle}>CodeShop</Link>
+            <Link to="/" style={logoStyle}>myShop</Link>
             <Link to="/cart" style={cartLinkStyle}>
                 🛒 Cart
                 <span style={cartCountStyle}>{cart.length}</span>

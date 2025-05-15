@@ -1,7 +1,7 @@
 import { useCart } from "../context/cartContext";
 import { useEffect } from "react";
 
-export default function Ordersuccess() {
+export default function OrderSuccess() {
     const { clearCart } = useCart();
 
     useEffect(() => {
@@ -16,30 +16,33 @@ export default function Ordersuccess() {
             alignItems: "center",
             height: "100vh",
             textAlign: "center",
-            backgroundColor: "#f5f5f5",
+            background: "linear-gradient(145deg, #0d0b29, #2c003e)",  // dark gradient background
             padding: "20px",
-            fontFamily: "'Segoe UI', sans-serif"
+            fontFamily: "'Orbitron', sans-serif",  // Futuristic font for neon feel
         },
         title: {
-            fontSize: "2.5rem",
-            color: "#4CAF50",
-            marginBottom: "20px"
+            fontSize: "3rem",
+            color: "#39ff14", // Neon green for vibrant effect
+            marginBottom: "20px",
+            textShadow: "0 0 10px #39ff14, 0 0 20px #39ff14, 0 0 30px #39ff14",  // Glowing neon green text
         },
         message: {
-            fontSize: "1.2rem",
-            color: "#333",
-            marginBottom: "30px"
+            fontSize: "1.5rem",
+            color: "#fff",
+            marginBottom: "30px",
+            textShadow: "0 0 5px #fff, 0 0 10px #ff00ff, 0 0 15px #ff00ff", // Light white text with neon purple glow
         },
         button: {
-            padding: "12px 25px",
-            fontSize: "1rem",
-            backgroundColor: "#4CAF50",
-            color: "#fff",
+            padding: "14px 30px",
+            fontSize: "1.2rem",
+            background: "linear-gradient(90deg, #ff00ff, #39ff14)", // Neon gradient background for the button
+            color: "#000",
             border: "none",
-            borderRadius: "6px",
+            borderRadius: "10px",
             cursor: "pointer",
-            transition: "background 0.3s ease",
-            textDecoration: "none"
+            transition: "all 0.3s ease",
+            textDecoration: "none",
+            boxShadow: "0 0 10px #ff00ff, 0 0 20px #39ff14", // Glowing effect around the button
         }
     };
 
